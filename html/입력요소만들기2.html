@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 외 입력 요소들</title>
+</head>
+<body>
+    <!--input 외에 입력 요소는 select와 textarea가 있고, 둘 다 인라인 요소입니다.-->
+
+
+    <!--select태그는 option이라는 태그를 통해 드롭다운 메뉴를 만들 수 있습니다.-->
+    <h1>오늘 모임 장소 고르기</h1>
+    <select name = "cafe"> <!--다중선택을 허용하고 싶다면 multiple을 적으면 됩니다.-->
+        <option value = "coffeebay">커피베이</option> <!--기본적으로 선택되있게 하고싶으면 selected를 적으면 됩니다.-->
+        <option value = "coffeebean">커피빈</option>
+        <option value = "cafebene">카페베네</option>
+        <option value = "starbucks">스타벅스</option>
+        <option value = "ediya">이디야</option>
+        <option value = "magacoffee">메가커피</option>
+        <option value = "compose">컴포즈</option>
+    </select><br><br><br><br><br><br><br>
+    <!--option 태그의 value 속성은 나중에 서버에서 실제로 처리될 데이터의 이름입니다.-->
+
+    <!--input은 1줄만 사용이 가능하지만,
+        textarea는 여러 줄의 일반 텍스트를 입력할 수 있고 name 속성이 사용가능합니다.-->
+    <h2>기타의견</h2>
+    <textarea name = "content" rows = "10" cols = "20"></textarea>
+</body>
+</html>
