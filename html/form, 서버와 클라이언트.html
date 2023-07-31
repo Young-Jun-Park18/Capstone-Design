@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form태그 공부</title>
+</head>
+<body>
+
+    <form action = "naver.com" method = "post"> <!--from 태그에는 전송할 서버의 url을 입력하는 action = "" 속성과 어떤 방식으로 전송할지 선택하는 method = "" 속성이 존재합니다.-->
+    <!--get은 서버에 요청을 보내어 응답을 받아냅니다. 반면 post는 서버에 요청을 보내어 서버가 추가 작업을 한 후 응답을 받아냅니다.-->
+        <input type = "text" name = "ID" maxlength = "10" minlength = "3" 
+         placeholder = "ID" /><input type = "text" placeholder = "최대10글자"/><br>
+
+        <input type = "text" name = "PW" maxlength = "20" minlength = "6" 
+         placeholder = "PassWord"/><input type = "text" placeholder = "최대 20글자"/><br>
+    </form>
+    <!--입력값들을 form으로 묶어두었으니 이제 서버에 전송을 해야하는데 이때에는 type = "button"이 아니라
+        type = "submit"으로 설정합니다 button과 같이 value ="~" 값을 사용해 글자를 입력가능합니다-->
+    <input type = "submit" value = "로그인"/>    
+
+
+    <br><br><br><br><hr>
+
+
+    <h2>로스트아크에서 가장 좋아하는 에스더에게 <span style = "color:red">투표</span>해주세요!</h2>
+    
+    <from action = "exam.php" method = "POST">
+        <select name = "Esther">
+            <option value ="Silian">실리안</option>
+            <option value ="Bahunturr">바훈투르</option>
+            <option value ="Waye">웨이</option>
+            <option value ="Azena">아제나</option>
+            <option value ="Inanna">이난나</option>
+            <option value ="Syandy">샨디</option>
+            <option value ="Ninave">니나브</option>
+            <option value ="Kadan">카단</option>
+        </select><br>
+            <input type = "text" placeholder = "기타의견" name = "Other"/><br>
+            <input type = "submit" value = "제출"/>
+    </from><br><br><br><br>
+
+
+    
+    <image src = "images/설문톡톡.PNG" alt = "설문톡톡 안내 이미지" width = 914 height = 700/>
+    <br><br><br>
+    <!--하나의 유튜브 영상에 모든 설명이 다 들어가 있기 때문에 각각의 영상 시작 시점에서 유튜브에 url을 
+    복사한 후 링크를 걸면 바로 이동할 수 있습니다.-->
+    <a href = "https://www.youtube.com/watch?v=K8AOnBtHNDI" target = "_blink">
+        <image src = "images/실리안.PNG" alt = "에스더 실리안" width = "225" height = "350"/></a>
+    <a href = "https://youtu.be/K8AOnBtHNDI?t=80" target = "_blink">
+        <image src = "images/바훈투르.PNG" alt = "에스더 바훈투르" width = "225" height = "350"/></a>
+    <a href = "https://youtu.be/K8AOnBtHNDI?t=34" target = "_blink">  
+        <image src = "images/웨이.PNG" alt = "에스더 웨이" width = "225" height = "350"/></a>
+    <a href = "https://youtu.be/K8AOnBtHNDI?t=225" target = "_blink">    
+        <image src = "images/아제나.PNG" alt = "에스더 아제나" width = "225" height = "350"/></a>
+    <a href = "https://youtu.be/K8AOnBtHNDI?t=190" target = "_blink">  
+        <image src = "images/이난나.PNG" alt = "에스더 이난나" width = "225" height = "350"/></a>
+    <a href = "https://youtu.be/K8AOnBtHNDI?t=305" target = "_blink">    
+        <image src = "images/샨디.PNG" alt = "에스더 샨디" width = "225" height = "350"/></a>
+    <a href = "https://youtu.be/K8AOnBtHNDI?t=133" target = "_blink">  
+        <image src = "images/니나브.PNG" alt = "에스더 니나브" width = "225" height = "350"/></a>
+    <a href = "https://www.youtube.com/watch?v=K8AOnBtHNDI" target = "_blink">      
+        <image src = "images/카단.jpg" alt = "에스더 카단" width = "225" height = "350"/></a>
+
+
+    </form>
+
+</body>
+</html>
