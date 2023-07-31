@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력요소 연습</title>
+</head>
+<body>
+    <!--input 태그는 단일태그로써 사용자로부터 값을 입력받을 수 있는 대화형 필드를 나타낸다.
+        기본적으로는 인라인 요소이며 20가지가 넘는 type 속성을 가집니다.-->
+    <!--☆중요한 점☆ input 태그에는 name 식별자를 추가할 수 있는데 이는 각각의 입력 항목에 대한 이름이다.--> 
+    
+    <input type = "text" name ="text" /><br><br>
+    <!--text에는 사용자가 입력하기 전에 안내문구를 띄워주는 placeholder="" 속성을 사용할 수 있다.
+        text에는 글자 제한을 주기 위한 maxlength=""를 사용할 수 있다.-->
+    <input type = "text" name ="text" maxlength = "2" placeholder = "성"/><input type = "text" name ="이름" maxlength = "5" placeholder = "이름" />
+    <br><br>
+
+
+    <input type = "button" name ="button" /><br><br>
+    <!--button에는 아무것도 안 쓰여있는데 여기에 무엇을 추가하고 싶다면 value =""라는 속성을 추가하면 된다.-->
+    <input type = "button" name ="button" value = "PUSH" style = color:red/> <br><br>
+    <input type = "button" name ="button" value = "확인" /><input type = "button" value = "취소"/><br><br>
+    <!--취소 버튼이나 확인 버튼에 빨간색 글씨로 표기하고 싶은데 모르겠으니 나중에 알아보자>-->
+    
+
+    <input type = "color" name ="color"/><br><br>
+
+
+    <input type = "range" name ="range" /><br><br>
+    <!--range에는 최대값 속성인 max, 최소값 속성인 min, 1칸당 간격인 step속성을 사용할 수 있습니다-->
+    <input type = "range" name ="range" max = "100" min = "0" step = "10"/><br><br>
+
+
+    <input type = "date" name ="date" /><br><br>
+
+</body>
+</html>
