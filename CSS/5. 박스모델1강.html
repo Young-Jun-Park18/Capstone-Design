@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 1강</title>
+
+    <style>
+        div{
+            border : 3px solid red; /*요소를 감싸는 3px 크기의 빨간 테두리가 생긴다*/
+            padding : 10px; /*요소의 상하좌우에 10px 만큼의 안쪽여백이 생긴다*/
+            margin : 20px; /*테두리 바깥쪽으로 20px 크기 만큼의 여백이 생긴다.*/
+            width : 90px;  /*인라인 요소는 가질 수 없음 : display : inline-block으로 설정해줘야함.*/
+            height : 35px; /*인라인 요소는 가질 수 없음 : : display : inline-block으로 설정해줘야함.*/
+            
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!--박스모델이란?
+        브라우저가 요소를 렌더링 할 때, 각각의 요소들은 기본적으로
+        사각형 형태로 영역을 차지하게 됩니다. 이 영역이 box이며,
+        css는 박스의 크기, 위치, 속성(색 배경 테두리 모양)을 
+        결정할 수 있습니다.
+
+        박스의 구성요소는?
+        1. 콘텐츠 영역 : 콘텐츠 높이랑 콘텐츠 너비를 가진다
+           -width, height
+        2. 안쪽 여백 
+           - padding
+        3. 경계선(테두리)
+           - margin
+        4. 바깥쪽 여백
+           - border-width
+    -->
+
+    <div>
+        실습용 요소의 콘텐츠
+    </div>
+    <span>실습용 요소의 콘텐츠 바깥 여백 이후에 표시됩니다.</span>
+</body>
+</html>
