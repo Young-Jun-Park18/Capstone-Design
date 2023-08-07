@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 2강</title>
+    
+    <style>
+        div
+            {width : 100px;
+             height : 100px;
+             padding : 10px;
+             border : 5px solid red;
+             margin : 20px;
+
+             padding-left : 10px; /* 위에 있는 padding 값은 무시된다.*/
+             padding-right : 20px;
+             padding-top : 30px;
+             padding-bottom : 40px;
+             
+             margin-left : 10px; /* 위에 있는 margin 값은 무시된다.*/
+             margin-right : 20px;
+             margin-top : 30px;
+             margin-bottom : 40px;
+
+             margin : 10px 20px 30px 40px; /* 위 오른쪽 아래 왼쪽 순서이다.*/
+             padding : 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <!--padding이나 margin은 하위 속성을 정의하여 상하좌우를
+        따로 설정할 수 있습니다. 
+        
+        ex) padding-reft -right -top -bottom-->
+        <div>
+            바보
+        </div>
+</body>
+</html>
