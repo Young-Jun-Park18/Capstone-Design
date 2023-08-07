@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display속성과 border속성</title>
+    
+    <style>
+        div{
+            border : 3px solid blue;
+            display : inline;
+        } /*!!중요!! 쉼표 사용하지 않는다*/
+
+        span{border-color : rgb(10%, 20%, 30%); 
+             border-width : 5px; 
+             border-style : dashed;
+             display : block;
+            }
+    </style>
+</head>
+<body>
+    <!--display 속성은 내가 선택한 것을 블록 요소와 인라인 요소중 
+        뭘로 지정을 할 지 정해주는 속성입니다.
+
+        ex) div{display:inline;}
+        ex) span{display: block;}
+        ex) p{display:inline-block;}
+        ex) a{display : none;}
+    -->
+
+    <!--border 속성은 요소가 차지하고 있는 영역에 태두리를 그릴 수 있습니다.
+        border 속성은 두께, 모양, 색상을 함께 지정할 수 있습니다.
+        ex) span{border : 2px(두께) solid(모양) green(색상) }
+        ex) span{border-color : ~ ;} : 색상
+        ex) span{border-width : ~ ;} : 두께
+        ex) span{border-style : ~ ;} : 테두리 모양
+        이렇게 따로 지정할수도 있습니다.
+    -->
+    <div>
+        저는 블록 레벨입니다.
+    </div>
+
+    <span>
+        저는 인라인 레벨입니다.
+    </span>
+</body>
+</html>
