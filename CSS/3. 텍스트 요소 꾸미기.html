@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트를 꾸미는 속성</title>
+
+    <style>
+        h1{font-family:monospace;}
+        p{font-family:serif;}
+        h2{ font-family:monospace, serif; /*이 뜻은 h2 태그 내용에 폰트로 monospace를 먼저 설정해보고 
+            만약 user의 폰트 중 monospace가 없으면 차순위 후보로 serif를 사용할 것이다. */}
+
+
+        h1{font-size:32px;} /* h1태그의 기본 글씨크기는 32px 입니다,*/
+        p{font-size:16px;} /* p태그의 기본 글씨크기는 16px 입니다. */
+        /* font-size : 2rem  = html 문서 설정 폰트의 2배로 키운다*/
+        /* font-size : 5em = 내가 적은 태그의 상위 태그보다 5배로 키운다*/
+
+        h1{text-align:left;} /* h1태그의 내용을 왼쪽 정렬한다. */
+        p{text-align : center;} /* p태그의 내용을 가운데 정렬한다.*/
+        h2{text-align : justify;} /*마지막 줄을 제외하고 양쪽 정렬한다*/
+
+        h2{ color : red;} /*색상 설정 1번 째 방법 : 말 그대로 색상을 영어로 표기*/
+        p{color : #ffaabb;} /*r두자리 g두자리 b두자리 값을 직접 설정 00~ff 16진수로 표현한다*/
+        h2{color : rgb(70%, 10%, 20%)} /*rgb값을 괄호 안에 원하는 퍼센트 설정해주기*/
+        
+    </style>
+</head>
+<body>
+    <!--이번 강의에서는 font-size, font-family, text-align, color에 대해 배울 것입니다.-->
+
+    <!--css 속성 중 font-family는 글꼴을 지정해주는 속성이고 쉼표로 여러가지를 설정할 수 있습니다.-->
+    <h1>font-family 실습</h1>
+    <p>head 태그 안에 style 속성을 사용해야 합니다.</p>
+    <h2>아무것도 적용하지 않은 글꼴입니다.</h2>
+</body>
+</html>
