@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 4강</title>
+
+    <style>
+        div{
+            box-sizing: border-box; /*테두리크기가 박스 크기의 기준이다*/
+            width:500px; height:500px;
+            border : 1px solid red; /*테두리*/
+            background-color:purple;
+            background-image : url(./실습용이미지.jpg);
+            background-repeat : no-repeat; /* 기본값은 repeat; - 이미지를 반복*/
+            background-position : center bottom; /*기본값은 left top; */
+            background-size : cover;  /* cover속성은 이미지가 깨지지 않는 선에서 꽉 찬다)*/
+            /* background-size : 500px 300px; 너비 높이 순서 */
+            /* background-size : contain; 잘리거나 찌그러지지 않는 선에서 꽉차게*/
+        }   
+    </style>
+</head>
+<body>
+    <!--background는 콘텐츠의 배경을 정의합니다.
+        background의 하위 속성으로는 -color, -image, -position, -size, -repeat이 있다.
+    -->
+
+
+    <!--background-color : 배경색을 정의한다.
+        background-image : 배경 이미지를 정의한다.
+        background-position : 배경 이미지의 초기 위치를 정의한다.
+        background-size : 배경 이미지의 크기를 정의한다.
+        background-repeat : 배경 이미지의 반복 방법을 정의한다.-->
+    <div>
+        전혀 성장하지 않았구나 쿠크세이튼
+    </div>
+</body>
+</html>
