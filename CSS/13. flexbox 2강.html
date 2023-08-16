@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 2강</title>
+
+    <style>
+        .container{
+            display: flex;
+            width : 300px; height : 300px;
+            border : 2px solid black;
+            justify-content: center; /* 주축에 대해 가운데 정렬*/
+            /* justify-content : flex-end or flex-start  = 끝으로 정렬 or 앞으로 정렬*/
+            /* justify-content : space-around = 좌우 여백이 비슷하게 요소들이 띄어진다.*/
+            /* justify-content : space-between = 좌우 끝을 맞추고 여백도 맞춘다.*/
+
+            align-items : flex-start;
+          
+        }
+
+        .item{
+            width : 60px; height : 60px;
+            background-color : teal;
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+        flexbox를 다루는 속성들
+            -justify-content : 주축 배치 방법
+            -align-items : 교차축 배치 방법
+            -align-self : 교차축 개별요소 배치 방법
+            -flex-wrap : 줄 바꿈 여부
+    -->
+
+    <div class = "container">
+        <div class = "item"> 1 </div>
+        <div class = "item"> 2 </div>
+        <div class = "item"> 3 </div>
+    </div>
+</body>
+</html>
