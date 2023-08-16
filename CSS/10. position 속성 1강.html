@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 속성 1강</title>
+
+    <style>
+        div{
+            width : 200px; height : 200px;
+            background-color : yellow;
+            position : relative;
+            /*top : 100px; left : 200px; 위에서부터 100px, 왼쪽에서부터 200px 만큼 떨어트린다.*/
+            border : 1px solid black;
+        }
+
+        .abs{
+            width : 100px; height : 100px;
+            background-color : red;
+            position : absolute; /*absolute 속성값은 문서 흐름에서 제외되고, 상위 제일 가까운 요소 position을 기준으로 떨어진다.*/
+            top : 300px; /*바로 위 상위 요소가 2번째 div이므로 2번째 div로 부터 300px 떨어진 채로 설정된다.*/
+        }
+    </style>
+</head>
+<body>
+    <!--position 속성은 문서 상에 요소를 배치하는 방법을 정의합니다.
+        top, bottom, left, right로 상하좌우를 정할 수 있다.
+        
+        [속성값]
+        1. static : 기본값, 요소를 일반적인 문서 흐름에 따라 배치한다.
+        2. relative : 일반적인 문서 흐름에 따라 배치하되, 상하좌우 위치 값에 따라 오프셋을 적용한다.
+
+        3. absolute : 일반적인 문서 흐름에서 제거하고, 가장 가까운 position 지정 요소에 대해 상대적으로 오프셋을 적용한다
+        4. fixed : 일반적인 문서 흐름에서 제거하고, 지정한 위치에 고정한다.
+        5. sticky : 일반적인 문서 흐름에서 제거하고, 스크롤 동작이 존재하는 가장 가까운 요소에 대해 오프셋을 적용한다.
+
+    -->
+    <div></div>
+    <div>
+        <div class = "abs"></div>
+    </div>
+    <p>ppppp</p> <!--빨간 상자가 absolute 이기 때문에 p태그가 먼저 오는 것을 주의해야한다.-->
+</body>
+</html>
