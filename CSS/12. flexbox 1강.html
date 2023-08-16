@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox 1강</title>
+
+    <style>
+        .item{
+            width : 80px; height: 80px;
+            background-color: orange;
+        }
+
+        .container{
+            display:flex;
+            flex-direction : column-reverse; /* 주축은 열(column)이지만 요소의 진행방향이 반대인 것이 나온다.*/
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+        1. flexbox란 박스 내 요소 간의 공간 배분과 정렬 기능을 제공하기 위한
+        1차원 레이아웃 모델이다. flexbox를 1차원 모델이라 부르는 이유는, 레이아웃을 다룰 때 한 번에
+        하나의 행이나 열만을 다룬다는 특성 때문이다.
+
+        2. flexbox(flex컨테이너)를 만들기 위해서는 컨테이너에 display : flex;를 적용해야 한다.
+        flex는 행(row)방향으로 정렬 시킨다.
+
+        3. flex-direction 속성은 flexbox내 요소를 배치할 때 사용할 주축 및 방향을 지정한다. 
+           -row : 기본값, 주축은 행이고 방향은 콘텐츠의 방향과 동일
+           -row-reverse : 주축은 행이고 방향은 콘텐츠의 방향과 반대
+           -column : 주축은 열이고 방향은 콘텐츠의 방향과 동일
+           -column-reverse : 주축은 열이고 방향은 콘텐츠의 방향과 반대
+    -->
+    <div class = "container">
+        <div class = "item">1</div>
+        <div class = "item">2</div>
+        <div class = "item">3</div>
+    </div>
+
+
+</body>
+</html>
