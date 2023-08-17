@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사클래스</title>
+
+    <style>
+        [type = "button"]{
+            width : 100px; height : 30px;
+            background-color : tomato; color : white;
+            border : none; border-radius : 8px;
+        }
+
+        [type = "button"]:hover{
+            background-color : gray;
+        }
+
+        [type = "button"]:active{
+            background-color : black;
+        }
+
+        [type = "text"]:focus{
+            background-color : green;
+        }
+
+        input:disabled{
+            height : 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+        의사 클래스(가상 클래스)란 선택자에 추가하는 키워드로, 어떤 요소에
+        특정한 이벤트가 발생했을 때 요소를 선택하겠다는 의미이다.
+        ex) h1 : hover{color : red;} = h1요소에 마우스가 올라가면(hober) 빨간색으로 바꾸겠다.
+    -->
+
+    <!--
+        1. hover : 마우스 포인터가 요소에 올라가 있을 때,
+        2. active : 사용자가 요소를 활성화 했을 떄, (ex 마우스 클릭)
+        3. focus : 요소가 포커스를 받고 있을 때(비밀번호 기입하려고 눌러놨을 때, 마우스 커서가 깜빡거릴떄),
+        4. disabled : 비활성화 상태의 요소일 떄,
+        5. nth-child() : 형제 사이에서의 순서에 따라 요소를 선택
+    -->
+
+    <input type = "button" value = "버튼"><br>
+    <input type = "text" placeholder = "입력창" disabled>
+</body>
+</html>
