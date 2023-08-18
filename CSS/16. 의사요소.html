@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사요소 공부</title>
+
+    <style>
+        p::first-line{
+            color:red;
+        }
+
+        p::first-letter{
+            color:yellow;
+        }
+
+        li::marker{
+            color: teal;
+            font-size : 20px;
+        }
+
+        input::placeholder{
+            color : yellow;
+        }
+
+        p::before{
+            content : "앞에다가 추가한 텍스트입니다.";
+        }
+
+        p::after{
+            content : "뒤에다가 추가한 텍스트입니다.";
+            font-size : 24px;
+            color : purple;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--의사요소란 선택자에 추가하는 키워드로 선택 요소의
+        특정 부분에 대한 스타일을 지정할 수 있다.
+    
+        ex) li :: first-letter{} = 첫글자만 선택
+        1. after : 요소의 뒤에 의사 요소를 생성 및 추가한다.
+        2. before : 요소에 앞에 의사 요소를 생성 및 추가한다.
+        3. first-line : 블록 레벨 요소의 첫 번째 선에 스타일을 적용한다.
+        4. marker : 목록 기호의 스타일을 적용한다.
+        5. placeholder : 입력 요소의 플레이스홀더 스타일을 적용한다.
+
+    -->
+
+    <p>
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+        퍼스트 라인 그리고 퍼스트 레터
+    </p>
+    
+    <ul>
+        <li>강아지</li>
+        <li>고양이</li>
+        <li>다람쥐</li>
+        <li>햄스터</li>
+    </ul>
+
+    <input type = "text" placeholder ="아무거나 쓰세요!">
+
+    <p>원래 쓰여 있던 내용</p>
+</body>
+</html>
