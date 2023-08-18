@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상속과 공용키워드</title>
+
+    <style>
+        div{
+            display : flex; /*display : flex; css코드를 head 태그 안에 넣어주면 flexbox(flex컨테이너)를 생성할 수 있다*/
+            justify-content : center; /*justify-content는 주축에서 어디에 배치할지. center는 중앙 배치*/
+            align-items : center;    /*align-items 는 교차 축에서 어디로 배치할지.*/
+            width : 300px; height : 300px;
+
+            color: tomato;
+            font-size :24px;
+            border:3px dashed red;
+        }
+
+        p{
+            color: inherit; /*상속은 자기에게 주어진 style이 없을 떄만 적용된다.*/
+            border : inherit;
+            font-size : initial; /*initial은 지정이전의 기본값을 사용할 것이다.*/
+            font-family : unset; /*상속이 되는 속성이면 inherit기능, 상속이 안 되는 속성이면 initial기능 적용*/
+
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+        상속 : 하위 요소가 상위 요소의 스타일 속성값을 물려받는 것을 의마한다.
+         inherited : yes 이면 상속가능, no면 상속 불가능
+
+        공용 키워드 : 모든 CSS 속성에 사용 가능한 키워드이다(전역값)
+            -inherit : 상위 요소로부터 해당 속성의 값을 받아 사용한다.
+            -initial : 브라우저에 저장되어있는 해당 속성의 기본값을 요소에 적용한다.
+            -unset : 상속 속성에 대해서는 inherit처럼, 상속되지 않는 속성에 대해서는 initial처럼 적용된다.
+
+
+    -->
+
+    <div>
+        <p>가운데 p 태그</p>
+    </div>
+</body>
+</html>
