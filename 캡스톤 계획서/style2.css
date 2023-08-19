@@ -1,0 +1,219 @@
+*{
+    list-style : none; /*li목록 앞에 점을 없애주는 역할을 합니다.*/
+    text-decoration : none; /*밑줄을 없애주는 역할을 합니다.*/
+    margin : 0; /*바깥 여백과 안쪽 여백을 0으로 초기화 합니다.*/
+    padding : 0;
+    color : #000;/*기본 폰트 색상을 검정으로 바꿉니다.*/
+    border-collapse : collapse; /*border-collaspe는 표 테두리와 셀 테두리가 겹칠 때 어떻게 할지 설정합니다 collapse 설정값은 겹치는 부분을 삭제해줍니다.*/
+}
+
+.banner{
+    background-image : url("image2.jpg"); /*백그라운드 이미지 삽입법*/
+    width : 100%; /*가로크기*/
+    height : 718px; /*세로크기*/
+    background-size : cover; /*background-size : cover를 통해 이미지가 찌그러지더라도 꽉차게 설정 */
+}
+
+.container .header{
+    display : flex; /*display : flex를 해줘야 요소들이 가로로 정렬된다.*/
+    width : 1280px;
+    height : 86px;
+    margin : auto; /*바깥 여백을 자동으로 해줍니다.*/
+    
+}
+
+.searcharea{ 
+    width : 300px; /*가로 300 세로 40짜리 영역 구분*/
+    height : 40px;
+    background : rgba(0,0,0,0.5);
+    border-radius : 5px;
+    margin-top : 24px;
+}
+
+.nav{
+   justify-content: flex-end; /*justify-content는 주축 정렬 방식이고, flex-end는 우측 끝쪽 정렬 방식입니다.
+                                교차축 정렬 방식으로는 align-items가 있습니다.*/
+   display : flex;
+   width:calc(1280px - 300px); /*width:calc(a - b) 알아서 계산해준다 */
+   align-items : center;
+}
+
+.nav > li{
+    margin-left : 42px; /*li 리스트들의 바깥 여백이 왼쪽으로부터 42px씩 떨어진다.*/
+}
+
+.searcharea > form > input{
+    border : none;
+    width : 250px;
+    height : 40px;
+    background-color : rgba(0,0,0,0);
+    color : white;
+    padding : 10px;
+}
+
+.searcharea > form > span{
+    width : 50px;
+    color : white;
+    cursor : pointer;
+}
+
+.nav li a {
+    color : white;
+}
+
+
+.introtext{
+    width:100%;
+    margin : 245px auto 233px auto;
+    text-align : center;
+}
+
+
+.introtext > h1,
+.introtext > h4{
+    color : #fff;
+}
+
+h1{
+    font-size:48px;
+    font-weight : 100;
+}
+
+.contents1{
+    font-size : 16px;
+    font-weight : lighter;
+}
+
+.result{
+    font-size : 24px;
+}
+
+.amount{
+    width : 1280px;
+    background-color: WHITE;
+    display : flex;
+    margin : auto;
+    position : relative; /*position은 위치를 변경하느 속성이고 relative는 문서의 흐름대로 설정하는 것이다.*/
+    top : -66px; /*위로 66px만큼 올라간다*/
+    box-shadow : 3px 3px 0px rgba(0,0,0,0.2)
+   
+}
+
+.amount > li > div{
+    text-align : center;
+    height : 57px;
+    margin-top : 37px;
+}
+
+.amount > li:not(:last-child){
+    border-right : 1px solid #e1e1e1;
+}
+
+.amount > li{
+    flex : 1;
+    height : 132px;
+}
+
+.maintext{
+    width : 100%;
+    height : 601px;
+    background : #f1f2f3;
+    margin-top : -132px;
+}
+
+.maintext > h1 {
+    padding-top : 116px;
+    text-align : center;
+}
+
+.maintext > .contents1{
+    font-size : 24px;
+    text-align : center;
+}
+
+.contents1bold{
+    font-size : 18px;
+    font-weight : bold;
+}
+
+.icons{
+    display : flex;
+    width : 1280;
+    height : 302px;
+    margin:0 128px 0 128px;
+}
+
+.icons > li{
+    height : 302px;
+    background-color: #fff;
+    flex:1;
+    margin-top : 49px;
+    text-align: center;
+}
+
+.icons > li:not(:last-child){
+    margin-right : 20px;
+}
+
+.iconimage{
+ background-image: url(electric.jpg);
+}
+
+.icons > li > .iconimage{
+    margin-top : 36px;
+}
+
+.more{
+    width: 100px ;
+    height: 30px;
+    background-color: #2f7af4;
+    color : white;
+    margin-top : 10px;
+    margin-left : 150px;
+    line-height: 25px;
+}
+
+.contents2{
+    font-size:15px;
+}
+
+.service{
+    width : 1280px;
+    display : flex;
+    height : 427px;
+    margin : auto;
+}
+
+.maintext1{
+    text-align: center;
+}
+
+.maintext1 > .contents2{
+    text-align: left;
+}
+
+.service > .contents2{
+    padding :20px;
+}
+
+footer{
+    display: flex;
+    background-color: #1f1f1f;
+    padding:30px;
+    margin-top:85px;
+}
+
+footer > div:first-child{
+    flex : 3;
+    text-align: center;
+    color:#fff;
+}
+
+footer >  div:last-child{
+    flex :9;
+    color:#fff;
+}
+
+.footer2{
+    display:flex;
+}
