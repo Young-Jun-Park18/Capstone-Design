@@ -1,0 +1,65 @@
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left : 40px;
+    padding-right : 40px;
+    background-color: black;
+    height : 120px;
+}
+
+.navbar___logo{
+    font-size : 24px;
+}
+
+.navbar___mainmenu{
+    display : flex;
+    list-style: none; /*리스트 앞에 점들을 없애준다.*/
+}
+
+.navbar___mainmenu li{
+    padding : 5px 12px;
+}
+
+a{
+    text-decoration: none; /*텍스트의 밑줄 삭제*/
+}
+
+
+
+
+
+
+
+
+
+/*------------검색창 시작------------*/
+
+.boxcontainer{ /*검색창 전체 box*/
+    width : 300px;
+    height : 42px;
+    border : 1px solid black;
+    padding : 0px 10px;
+    border-radius: 50px;
+}
+
+.elementscontainer{
+    width : 100%;
+    height : 100%;
+    vertical-align: middle; /*수직정렬*/
+}
+
+.search{/*검색창 내부 box*/
+    border : none;
+    height : 100%;
+    width : 100%;
+    padding : 0px 5px;
+    border-radius: 50px;
+    font-size : 18px;
+    font-weight: 500;
+}
+
+.search:focus{ /*사용자가 클릭했을 때*/
+    outline: none;
+}
+/*------------검색창 끝-------------*/
