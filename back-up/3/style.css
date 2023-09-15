@@ -1,0 +1,153 @@
+body{
+    padding : 0;
+    margin : 0;
+}
+
+/*-----------------------navbar 시작 ---------------------------*/
+
+.navbar{  /*상단bar 전체*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : auto;
+    width : 80%;
+    height : 60px;
+    padding-top: 20px;
+}
+
+/*------------메인메뉴 시작 ------------*/
+
+.navbar___mainmenu{ /*상단바 카테고리*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height : 60px;
+    padding-right: 120px;
+    list-style: none; /*리스트에 점 빼기*/
+    font-size: 14px;
+    position: relative;
+    right:5px;
+    top : -10px;
+}
+
+.navbar___mainmenu li{
+    padding : 6px 8px;
+}
+
+.navbar___mainmenu li a{
+    color:black;
+    padding : 6px 0;
+}
+
+.navbar___mainmenu li:hover{ 
+    background-color: black;
+    border-radius: 18px;
+}
+
+.navbar___mainmenu li a:hover{
+    color:white;
+}
+/*------------메인메뉴 끝 ------------*/
+
+
+/*------------로고 시작 ------------*/
+.navbar___logo{ /*Parking fairy 로고*/
+    padding-left : 4%;
+}
+
+.navbar___logo a{
+    color : black;
+    font-size: 24px;
+    position: relative;
+    top:24px;
+}
+
+.icons{
+    position: absolute; /*user 아이콘*/
+    right : 13%; 
+}
+
+a{
+    text-decoration: none; /*밑줄 제거*/
+}
+/*------------로고 끝 ------------*/
+
+
+/*------------검색창 시작------------*/
+
+.boxcontainer{ /*검색창 전체 box*/
+    width : 300px;
+    height : 32px;
+    border : 1px solid black;
+    padding : 0px 10px;
+    border-radius: 50px;
+    position: relative; /*상하좌우 움직이기 가능*/
+    right : 6%;
+}
+
+.elementscontainer{
+    width : 100%;
+    height : 100%;
+    vertical-align: middle; /*수직정렬*/
+}
+
+.search{/*검색창 내부 box*/
+    border : none;
+    height : 100%;
+    width : 100%;
+    padding : 0px 5px;
+    border-radius: 50px;
+    font-size : 18px;
+    font-weight: 500;
+}
+
+
+.search:focus{ /*사용자가 클릭했을 때*/
+    outline: none;
+}
+/*------------검색창 끝-------------*/
+
+
+.backspace{
+    display: none;
+}
+
+.smallsearch{
+    display: none;
+}
+
+/*-----------------------navbar 종료 ---------------------------*/
+
+/*web에서 mobile화면으로 변경될 때*/
+@media screen and (max-width: 768px){
+
+    .navbar___mainmenu{
+        display: none;
+    }
+
+    .boxcontainer{
+        display: none;
+    }
+
+    .elementscontainer{
+        display: none;
+    }
+
+    .navbar___logo{
+        display: none;
+    }
+
+    .backspace{
+        display: flex;
+    }
+
+    .smallsearch{
+       display: flex;
+       position: relative;
+       right : 15%;
+    }
+    
+
+}
