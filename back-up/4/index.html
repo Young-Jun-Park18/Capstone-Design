@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parking fairy</title>
+    <link rel="stylesheet" href="style.css"> <!--css와 연결-->
+    <script src = "main.js" defer></script> <!--js와 연결-->
+    <script src="https://kit.fontawesome.com/76ca71fa65.js" crossorigin="anonymous"></script> <!--font awesome에서 내 링크 연동-->
+</head>
+
+<body>
+    <!-------------------------------상단바 시작------------------------------------>
+    <nav class = "navbar">
+
+
+        <div class="navbar___logo"><!--parking fairy로고 시작-->
+            <a href="#">PARKING FIARY</a>
+        </div>                     <!--parking fairy로고 끝-->
+
+
+        <div class="boxcontainer"><!--검색창 시작-->
+            <table class="elementscontainer">
+                <tr>
+                    <td>
+                        <input type = "text" placeholder = "Search" class = "search">
+                    </td>
+                    <td>
+                        <a href = "#">
+                            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #030e21;"></i><!--돋보기 fa-lg = 33%확대-->
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>                    <!--검색창 끝-->
+
+        
+        <a href = "#" class = "icons">
+            <i class="fa-regular fa-user fa-xl" style="color: #031026;"></i><!--사용자-->
+        </a>
+
+
+        <!--mobile 환경일 때 navbar시작-->
+        <a href = "#" class ="backspace">  
+            <i class="fa-solid fa-angle-left fa-xl" style="color: #010813;"></i>
+        </a>
+
+        <a href = "#" class ="smallsearch">
+            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #010409;"></i>
+        </a>
+
+        <!--mobile 환경일 때 navbar종료-->
+      
+    </nav>  
+
+    <ul class="navbar___mainmenu"><!--메인메뉴 시작-->
+        <li><a href="#">고객지원</a></li>
+        <li><a href="#">비즈니스</a></li>
+        <li><a href="#">PF용인</a></li>
+        <li><a href="#">PF스토어</a></li>
+        <li><a href="#">지속가능경영</a></li>
+    </ul>                         <!--메인메뉴 끝-->  
+
+    <!-------------------------------상단바 끝------------------------------------>
+
+
+
+
+    <!-------------------------------메인view 시작------------------------------------>
+    <div class = "mainview">
+        <div class= "mainview___text">
+            <h1>이전에 없던 새로운 우리들의 주차장!</h1>
+        </div>
+        <a href = "#"><button>예약하기</button></a>
+    </div>
+
+    <!-------------------------------메인view 끝------------------------------------>
+</body>
+</html>
