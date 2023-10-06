@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parking fairy</title>
+    <link rel="stylesheet" href="style.css"> <!--css와 연결-->
+    <script src = "main.js" defer></script> <!--js와 연결-->
+    <script src="https://kit.fontawesome.com/76ca71fa65.js" crossorigin="anonymous"></script> <!--font awesome에서 내 링크 연동-->
+</head>
+
+<body>
+    <!-------------------------------상단바 시작------------------------------------>
+    <nav class = "navbar">
+
+
+        <div class="navbar___logo"><!--parking fairy로고 시작-->
+            <a href="#">PARKING FIARY</a>
+        </div>                     <!--parking fairy로고 끝-->
+
+
+        <div class="boxcontainer"><!--검색창 시작-->
+            <table class="elementscontainer">
+                <tr>
+                    <td>
+                        <input type = "text" placeholder = "Search" class = "search">
+                    </td>
+                    <td>
+                        <a href = "#">
+                            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #030e21;"></i><!--돋보기 fa-lg = 33%확대-->
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>                    <!--검색창 끝-->
+
+        
+        <a href = "#" class = "icons">
+            <i class="fa-regular fa-user fa-xl" style="color: #031026;"></i><!--사용자-->
+        </a>
+
+
+        <!--mobile 환경일 때 navbar시작-->
+        <a href = "#" class ="backspace">  
+            <i class="fa-solid fa-angle-left fa-xl" style="color: #010813;"></i>
+        </a>
+
+        <a href = "#" class ="smallsearch">
+            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #010409;"></i>
+        </a>
+
+        <!--mobile 환경일 때 navbar종료-->
+      
+    </nav>  
+
+    <ul class="navbar___mainmenu"><!--메인메뉴 시작-->
+        <li><a href="#">고객지원</a></li>
+        <li><a href="#">비즈니스</a></li>
+        <li><a href="#">PF용인</a></li>
+        <li><a href="#">PF스토어</a></li>
+        <li><a href="#">지속가능경영</a></li>
+    </ul>                         <!--메인메뉴 끝-->  
+
+    <!-------------------------------상단바 끝---------------------------------------->
+
+
+
+
+    <!-------------------------------메인view 시작------------------------------------>
+    <div class = "mainview">
+        <div class= "mainview___text">
+            <h1>이전에 없던 새로운 우리들의 주차장!</h1>
+        </div>
+        <button type="button" class = "main___button" onclick="location.href='#'">예약하기</button><!--button에 주소 넣는법-->
+    </div>
+    <!-------------------------------메인view 끝------------------------------------>
+
+
+    <!-----------------------------메인 view 밑 ports시작 -------------------------->
+
+        <!--스크롤 텍스트 시작-->
+        <div class = "scroll_text">
+            <a href = "#a"><h4>소개</h4></a> <!--가고자 하는 장소의 id값을 #과 함께 적어준다.-->
+            <a href = "#b"><h4>가입조건 및 회원자격</h4></a>
+            <a href = "#d"><h4>회원 전용 이벤트</h4></a>
+        </div>
+        <!--스크롤 텍스트 끝-->
+    
+
+        <!--port2 시작-->
+        <div id = "a" class ="port2">       <!--id와 클릭할 것의 href주소이름이 일치해야한다.-->
+            <h1>MJU & PARKING FAIRY</h1>
+            <h2>다양한 서비스와 커뮤니티 그리고 스토어까지, 매 순간이 다채로운 여기는 fairy zone</h2>
+
+
+            <!--이미지삽입구간-->
+
+
+            <p>정기주차권 구매 전 꼭 확인해보세요!</p>
+            <p>*대학인증/학생인증 후 정기권 구매 시 할인 적용</p>
+            <p>*할인혜택은 계정당 1회씩 참여가능</p>
+        </div>
+         <!--port2 끝-->
+    
+    
+          <!--port3 시작-->
+        <div id = "b" class = "port3">
+            <h1>test</h1>
+        </div>
+         <!--port3 끝-->
+
+
+        <!--port5 시작-->
+        <div id = "d" class = "port5">
+            <h1 class = H>꼭 확인하세요!</h1>
+            <div class = caution>
+                <ul>
+                    <li>parking fairy 서비스는 운전면허를 소지하고 있는 만19세 이상만 이용가능합니다.</li>
+                    <li>parking fairy 규정은 당사 사정에 따라 변경될 수 있습니다.</li>
+                    <li>해당페이지는 2023년 기준으로 작성되었습니다.</li>
+                    <li>매년 01월 01일 기준으로 parking fairy 가입 연령 및 조건에 미충족하는 회원들은 자동 탈퇴 처리됩니다.</li>
+                    <li>부정가입으로 확인된 계정은 자동 탈퇴 처리되며 이용권 구매가 중지됩니다.</li>
+                    <li>관련문의 : 고객센터 031)324-1042</li>
+             </ul><br>
+            </div>
+
+            <hr width= 80%>
+        
+            <h1 class = H>이메일 인증 유의사항</h1>
+            <div class = caution>
+                <ul>
+                    <li>parking fairy 가입인증 메일은 가입 요청 후 코드 입력 시간(10분) 내로 발송됩니다.</li>
+                    <li>“인증 메일이 오지 않는 경우” : 코드 입력 시간(10분)이 지나도록 가입 인증 메일을 받지 못했을 경우 스팸메일함을 확인 부탁드립니다.<br>
+                        이후에도 지속적으로 오류 발생 시 본인의 이메일을 통해  xxx123@mju.ac.kr 으로 아래 정보를 전달해주시기 바랍니다.<br>
+                        1. 이메일 제목: “인증 메일이 오지 않습니다.”<br>
+                        2. 이메일 본문: 고객 이름/삼성계정 ID/학년정보/인증메일 신청 화면 스크린샷 캡쳐<br>
+                        (ID는 이메일 또는 전화번호 형식으로 구성되어 있습니다. ID, 메일주소 등 상기 정보 오기입 시 가입 절차가 지연될 수 있으니 반드시 정확한 내용으로 기입 부탁 드립니다)</li>
+                    <li>“이미 인증받은 이메일로 이메일 인증 불가”라고 뜨는 경우 : 보통 두 개 이상의 계정을 가지고 있어 기존에 인증 받았던 계정 외 다른 계정으로 로그인을 시도할 시 다시 이메일 인증을 받으라는 안내가 뜨게 됩니다.<br>
+                    1. 계정 찾기를 통해 계정 확인 후 로그인 시도 바랍니다.<br>
+                    2. 이후에도 오류 발생 시 성함과 휴대폰 번호, 계정 ID 및 인증 시도하신 이메일을 xxx123@mju.ac.kr으로 보내주시기 바랍니다.<br>
+                    (로그인 시 크롬 사용을 권장 드리며 쿠키 및 캐쉬 삭제 후 로그인 부탁드립니다)<br></li>
+                </ul><br>
+            </div>
+            
+            <hr width= 80%>
+
+            <h1 class = H>parking fairy<br>특별한 선물</h1>
+            <div class = caution>
+                <ul>
+                    <li>본 행사는 parking fairy 단독 행사이며 기간별 행사 내용이 상이할 수 있습니다.</li>
+                    <li>상기 상품 이미지는 이해를 돕기 위해 연출된 것으로 실제 상품과 다를 수 있습니다.</li>
+                    <li>경품 발송을 위해 당사 대행사에 개인 정보가 제공되며 행사 종료 3개월 후 파기됩니다.</li>
+                    <li>제품 구매 취소 시 제공받은 혜택(사은품, 경품, 포인트 등)도 함께 반납해야 합니다.</li>
+                    <li>본 행사 내용은 당사 사정에 따라 예고 없이 변경 또는 중단될 수 있습니다.</li>
+                    <li>행사관련문의 : 고객센터 031)324-1042</li>
+                </ul><br>
+
+                <div class="btn-up"><!--누르면 페이지 최상단으로 이동.-->
+                    <button onclick="window.scrollTo(0, 0);" class="button btn-up-position">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+        </div>
+         <!--port5 끝-->
+
+    <!-----------------------------메인 view 밑 ports끝 -------------------------->
+    
+
+    
+    <!----------------------------작은 화면에서의 메인 view 시작---------------------->
+    <div class = "mainview2">
+        <div class= "mainview___text2">
+            <h1>이전에 없던 새로운 우리들의 주차장!</h1>
+        </div>
+        <button type="button" class = "main___button2" onclick="location.href='#'">예약하기</button><!--button에 주소 넣는법-->
+    </div>
+    <!----------------------------작은 화면에서의 메인 view 끝------------------------>
+</body>
+</html>
